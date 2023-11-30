@@ -27,13 +27,13 @@ const onloaded = () => {
             body: formData
         })
             .then(response => response.json())
-            .then(json => console.log("POST: " + json))
+            .then(json => console.log(json))
 
         fetch(`https://jsonplaceholder.typicode.com/posts`, {
             method: "GET"
         })
             .then(response => response.json())
-            .then(json => console.log("GET: " + json))
+            .then(json => console.log(json))
 
     })
 }

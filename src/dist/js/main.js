@@ -22,12 +22,12 @@ var onloaded = function () {
             body: formData
         })
             .then(function (response) { return response.json(); })
-            .then(function (json) { return console.log("POST: " + json); });
+            .then(function (json) { return console.log(json); });
         fetch("https://jsonplaceholder.typicode.com/posts", {
             method: "GET"
         })
             .then(function (response) { return response.json(); })
-            .then(function (json) { return console.log("GET: " + json); });
+            .then(function (json) { return console.log(json); });
     });
 };
 //# sourceMappingURL=main.js.map
