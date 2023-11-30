@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/js",
+    "module": "ES6",
+    "target": "es5",
+    "sourceMap": true
+  },
+  "include": [
+    "scripts/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

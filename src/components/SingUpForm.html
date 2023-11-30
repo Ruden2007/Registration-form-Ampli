@@ -1,0 +1,56 @@
+<form class="SingUpForm">
+    <h1>Registration</h1>
+    <label class="text-input">
+        <span class="text">Name</span>
+        <input name="name" type="text" placeholder="Enter name">
+    </label>
+    <label class="text-input">
+        <span class="text">Email</span>
+        <input name="email" type="email" placeholder="Enter email">
+    </label>
+    <label class="text-input">
+        <span class="text">Password</span>
+        <input name="pass" type="password" placeholder="Enter password">
+    </label>
+    <label class="text-input">
+        <span class="text">Confirm password</span>
+        <input name="pass-repeat" type="password" placeholder="Confirm your password">
+    </label>
+    <div class="radio-buttons">
+        <label class="radio">
+            <input type="radio" value="Male" name="gender" checked>
+            <span class="check-area"></span>
+            Male
+        </label>
+        <label class="radio">
+            <input type="radio" value="Female" name="gender">
+            <span class="check-area"></span>
+            Female
+        </label>
+    </div>
+    <label class="text-input textarea-input">
+        <span class="text">Your biography</span>
+        <textarea name="biography" cols="30" rows="2"></textarea>
+    </label>
+    <div class="checkboxes">
+        <label class="checkbox">
+            <input type="checkbox" name="agree">
+            <span class="check-area"></span>
+            I agree with Terms and Conditions
+        </label>
+        <label class="checkbox">
+            <input type="checkbox" name="subscribe">
+            <span class="check-area"></span>
+            Subscribe to our newsletter
+        </label>
+    </div>
+    <div class="buttons">
+        <button type="submit" disabled>Submit</button>
+        <button type="reset">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4C7.6 4 4 7.6 4 12C4 16.4 7.6 20 12 20C15.7 20 18.8 17.4 20 14H18C16.8 16.3 14.6 18 12 18C8.7 18 6 15.3 6 12C6 8.7 8.7 6 12 6C13.7 6 15.1 6.7 16 8L13 11H20V4L18 6C16.2 5 14.2 4 12 4Z" fill="white"/>
+            </svg>
+            Reset
+        </button>
+    </div>
+</form>

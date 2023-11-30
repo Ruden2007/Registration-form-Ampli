@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+
+form.SingUpForm
+  font-family: 'Roboto', sans-serif
+  font-size: 14px
+
+  padding: 48px
+  width: 100%
+  max-width: 655px
+  box-sizing: border-box
+
+  display: flex
+  flex-direction: column
+  row-gap: 24px
+
+  background: #FFF
+  box-shadow: 1px 2px 20px 0 rgba(0, 0, 0, 0.08)
+
+  *
+    margin: 0
+    padding: 0
+
+  h1
+    margin: 0 auto 65px
+
+    font-size: 36px
+    font-weight: 400
+    line-height: 24px
+
+  label.text-input
+    background: rgba(51, 51, 51, 0.06)
+    padding: 12px
+
+    display: flex
+    flex-direction: column
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.38)
+
+    .text
+      margin-bottom: 2px
+
+      color: rgba(0, 0, 0, 0.54)
+      font-size: 12px
+      line-height: 12px
+
+    input, textarea
+      font-size: 16px
+      line-height: 24px
+      color: rgba(0, 0, 0, 0.87)
+
+      background: none
+      border: none
+      outline: none
+
+    &.textarea-input
+      .text
+        margin-bottom: 16px
+
+      textarea
+        resize: none
+
+    &.invalid-input
+      border-bottom: 2px solid #db4437
+
+      .text
+        color: #db4437
+
+  .radio-buttons
+    display: flex
+    align-items: center
+    column-gap: 19px
+
+    label.radio
+      display: flex
+      align-items: flex-end
+
+      margin-left: 6px
+
+    input[type="radio"]
+      appearance: none
+
+
+    input[type="radio"]:checked + .check-area
+      background: url("./../../assets/icon/radio button on (hover).svg") center center / contain no-repeat
+
+    .check-area
+      width: 20px
+      height: 20px
+
+      margin-right: 10px
+
+      background: url("./../../assets/icon/radio button off (hover).svg") center center / contain no-repeat
+
+  .checkboxes
+    display: flex
+    flex-direction: column
+    row-gap: 20px
+
+    label.checkbox
+      display: flex
+      align-items: flex-end
+
+      margin-left: 6px
+
+    input[type="checkbox"]
+      appearance: none
+
+
+    input[type="checkbox"]:checked + .check-area
+      background: url("./../../assets/icon/checkbox on (hover).svg") center center / contain no-repeat
+
+
+    .check-area
+      width: 18px
+      height: 18px
+
+      margin-right: 8px
+
+      background: url("./../../assets/icon/checkbox off (hover).svg") center center / contain no-repeat
+
+  .buttons
+    display: flex
+
+    button
+      padding: 10px 8px
+      margin-right: 16px
+
+      min-width: 96px
+
+      display: flex
+      align-items: center
+      justify-content: center
+
+      color: white
+
+      font-size: 14px
+      font-weight: 500
+      letter-spacing: 0.5px
+      text-transform: uppercase
+
+      border: none
+      outline: none
+
+      border-radius: 2px
+      background-color: #57bebe
+
+      cursor: pointer
+
+      &:hover,
+      &:focus
+        background-color: rgba(0, 188, 212, 0.12)
+        color: #00BCD4
+
+      &:disabled
+        background: none
+        color: rgba(0, 0, 0, 0.38)
+
+      &[type="reset"]
+        background-color: #291c44
+        min-width: 108px
+
+        color: white
+
+      .icon
+        margin-right: 16px
